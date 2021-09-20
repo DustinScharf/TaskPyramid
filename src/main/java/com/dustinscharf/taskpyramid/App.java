@@ -1,6 +1,7 @@
 package com.dustinscharf.taskpyramid;
 
 import javafx.application.Application;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
@@ -16,9 +17,14 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         HBox rootHBox = new HBox();
-        Label helloText = new Label("Hello!");
+
         Scene startScene = new Scene(rootHBox);
+
+        Text helloText = new Text("Hello!");
+        rootHBox.getChildren().add(helloText);
+
         stage.setScene(startScene);
+
         stage.show();
     }
 }
