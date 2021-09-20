@@ -20,7 +20,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.7</version>
                 <configuration>
-                    <mainClass>INSERT MAIN CLASS HERE</mainClass> <!-- TODO -->
+                    <mainClass>com.dustinscharf.taskpyramid.Launcher</mainClass>
                 </configuration>
             </plugin>
         </plugins>
