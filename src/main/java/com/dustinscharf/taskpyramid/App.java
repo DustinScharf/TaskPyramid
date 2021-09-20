@@ -16,6 +16,8 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        stage.setTitle("TaskPyramid");
+
         HBox rootHBox = new HBox();
 
         Scene startScene = new Scene(rootHBox);
