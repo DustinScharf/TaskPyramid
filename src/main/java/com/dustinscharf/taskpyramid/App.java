@@ -18,6 +18,8 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         stage.setTitle("TaskPyramid");
 
+        stage.setMinWidth(600);
+
         HBox rootHBox = new HBox();
 
         Scene startScene = new Scene(rootHBox);
