@@ -19,6 +19,7 @@ public class App extends Application {
         stage.setTitle("TaskPyramid");
 
         stage.setMinWidth(600);
+        stage.setMinHeight(400);
 
         HBox rootHBox = new HBox();
 
