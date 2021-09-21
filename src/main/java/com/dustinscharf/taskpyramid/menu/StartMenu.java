@@ -1,5 +1,5 @@
 package com.dustinscharf.taskpyramid.menu;
 
-public class StartMenu {
+public class StartMenu implements Menu {
     // TODO, entry point
 }
