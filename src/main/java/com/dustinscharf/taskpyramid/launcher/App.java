@@ -1,4 +1,4 @@
-package com.dustinscharf.taskpyramid;
+package com.dustinscharf.taskpyramid.launcher;
 
 import javafx.application.Application;
 import javafx.scene.Node;
