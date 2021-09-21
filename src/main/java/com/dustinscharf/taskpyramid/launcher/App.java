@@ -1,5 +1,6 @@
 package com.dustinscharf.taskpyramid.launcher;
 
+import com.dustinscharf.taskpyramid.menu.StartMenu;
 import javafx.application.Application;
 import javafx.scene.Node;
 import javafx.scene.Scene;
@@ -31,5 +32,7 @@ public class App extends Application {
         stage.setScene(startScene);
 
         stage.show();
+
+//        new StartMenu().show(stage);
     }
 }
