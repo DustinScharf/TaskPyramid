@@ -33,6 +33,6 @@ public class App extends Application {
 
         stage.show();
 
-//        new StartMenu().show(stage);
+//        new StartMenu().show(stage); // TODO
     }
 }
