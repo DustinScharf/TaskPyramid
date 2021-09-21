@@ -19,6 +19,6 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         stage.setTitle("TaskPyramid");
 
-        new StartMenu().show(stage); // TODO
+        new StartMenu().show(stage);
     }
 }
