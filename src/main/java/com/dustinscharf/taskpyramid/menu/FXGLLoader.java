@@ -15,6 +15,7 @@ public class FXGLLoader {
         try {
             scene = new Scene(fxmlLoader.load());
         } catch (IOException e) {
+            e.printStackTrace();
             System.err.println("Could not find fxgl file " + fxglFilePath);
             System.exit(1);
         }
