@@ -10,4 +10,6 @@ public class StartMenu implements Menu {
         stage.setScene(FXGLLoader.toControlledScene(this, FXGL_FILE_PATH));
         return true;
     }
+
+    // TODO create gui as fxgl file
 }
