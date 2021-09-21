@@ -1,5 +1,10 @@
 package com.dustinscharf.taskpyramid.menu;
 
+import javafx.stage.Stage;
+
 public class StartMenu implements Menu {
-    // TODO, entry point
+    @Override
+    public boolean show(Stage stage) {
+        return false;
+    }
 }
