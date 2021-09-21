@@ -7,6 +7,7 @@ public class StartMenu implements Menu {
 
     @Override
     public boolean show(Stage stage) {
-        return false; // TODO
+        stage.setScene(FXGLLoader.toControlledScene(this, FXGL_FILE_PATH));
+        return true;
     }
 }
