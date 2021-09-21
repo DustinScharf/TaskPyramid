@@ -18,20 +18,6 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 //        stage.setTitle("TaskPyramid");
-//
-//        stage.setMinWidth(600);
-//        stage.setMinHeight(400);
-//
-//        HBox rootHBox = new HBox();
-//
-//        Scene startScene = new Scene(rootHBox);
-//
-//        Text helloText = new Text("Hello!");
-//        rootHBox.getChildren().add(helloText);
-//
-//        stage.setScene(startScene);
-//
-//        stage.show();
 
         new StartMenu().show(stage); // TODO
     }
