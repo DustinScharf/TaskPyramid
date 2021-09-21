@@ -6,11 +6,18 @@ import javafx.scene.Scene;
 import java.io.IOException;
 
 public class FXGLLoader {
-    public static Scene toControlledScene(Menu controllerMenu, String fxglFilePath) throws IOException {
+    public static Scene toControlledScene(Menu controllerMenu, String fxglFilePath) {
         FXMLLoader fxmlLoader = new FXMLLoader(FXGLLoader.class.getResource(fxglFilePath));
 
         fxmlLoader.setController(controllerMenu);
 
-        return new Scene(fxmlLoader.load());
+        Scene scene = null;
+        try {
+            scene = new Scene(fxmlLoader.load());
+        } catch (IOException e) {
+            System.err.println("Could not find fxgl file " + fxglFilePath);
+            System.exit(1);
+        }
+        return scene;
     }
 }
