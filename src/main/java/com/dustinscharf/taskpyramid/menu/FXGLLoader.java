@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import java.io.IOException;
 
 public class FXGLLoader {
-    public static Scene toControlledScene(Menu controllerMenu, String fxglFilePath) {
+    public static Scene toControlledScene(String fxglFilePath, Menu controllerMenu) {
         FXMLLoader fxmlLoader = new FXMLLoader(FXGLLoader.class.getResource(fxglFilePath));
 
         fxmlLoader.setController(controllerMenu);
