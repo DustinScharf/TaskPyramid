@@ -27,7 +27,15 @@ public class StartMenu implements Menu {
         return true;
     }
 
+    @Override
+    public void init() {
+
+    }
+
     // TODO create gui as fxgl file
 
-    // TODO create button listeners
+    //////////////////////
+    // Button Listeners //
+    //////////////////////
+
 }
