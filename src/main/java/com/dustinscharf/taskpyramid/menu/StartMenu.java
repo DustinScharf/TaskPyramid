@@ -10,6 +10,9 @@ public class StartMenu implements Menu {
     @FXML
     private Button playButton;
 
+    @FXML
+    private Button createGameButton;
+
     @Override
     public boolean show(Stage stage) {
         stage.setScene(FXGLLoader.toControlledScene(FXGL_FILE_PATH, this));
