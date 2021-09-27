@@ -28,8 +28,7 @@ public class StartMenu implements Menu {
         return true;
     }
 
-    @Override
-    public void init() {
+    private void init() {
         this.playButton.setOnAction(actionEvent -> this.playButtonClicked());
     }
 
