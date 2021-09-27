@@ -30,12 +30,22 @@ public class StartMenu implements Menu {
 
     private void init() {
         this.playButton.setOnAction(actionEvent -> this.playButtonClicked());
+        this.createGameButton.setOnAction(actionEvent -> this.createGameButtonClicked());
+        this.exitButton.setOnAction(actionEvent -> this.exitButtonClicked());
     }
 
     //////////////////////
     // Button Listeners //
     //////////////////////
     private void playButtonClicked() {
+
+    }
+
+    private void createGameButtonClicked() {
+
+    }
+
+    private void exitButtonClicked() {
 
     }
 
