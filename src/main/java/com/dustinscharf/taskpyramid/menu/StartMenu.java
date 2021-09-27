@@ -30,11 +30,14 @@ public class StartMenu implements Menu {
 
     @Override
     public void init() {
-
+        this.playButton.setOnAction(actionEvent -> this.playButtonClicked());
     }
 
     //////////////////////
     // Button Listeners //
     //////////////////////
+    private void playButtonClicked() {
+        System.out.println("playButtonClicked");
+    }
 
 }
