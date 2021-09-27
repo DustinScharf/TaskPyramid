@@ -10,4 +10,6 @@ public interface Menu {
      * @return true if the menu was shown successfully, false otherwise
      */
     public boolean show(Stage stage);
+
+    public void init();
 }
