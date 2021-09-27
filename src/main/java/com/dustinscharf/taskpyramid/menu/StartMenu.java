@@ -32,8 +32,6 @@ public class StartMenu implements Menu {
 
     }
 
-    // TODO create gui as fxgl file
-
     //////////////////////
     // Button Listeners //
     //////////////////////
