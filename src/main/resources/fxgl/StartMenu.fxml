@@ -11,7 +11,7 @@
          <children>
             <Label text="TaskPyramid" />
             <Button fx:id="playButton" mnemonicParsing="false" text="Play" />
-            <Button layoutX="284.0" layoutY="206.0" mnemonicParsing="false" text="Create Game" />
+            <Button fx:id="createGameButton" layoutX="284.0" layoutY="206.0" mnemonicParsing="false" text="Create Game" />
             <Button layoutX="284.0" layoutY="219.0" mnemonicParsing="false" text="Exit" />
          </children>
       </VBox>
