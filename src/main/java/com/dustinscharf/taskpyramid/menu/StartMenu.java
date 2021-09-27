@@ -13,6 +13,9 @@ public class StartMenu implements Menu {
     @FXML
     private Button createGameButton;
 
+    @FXML
+    private Button exitButton;
+
     @Override
     public boolean show(Stage stage) {
         stage.setScene(FXGLLoader.toControlledScene(FXGL_FILE_PATH, this));
