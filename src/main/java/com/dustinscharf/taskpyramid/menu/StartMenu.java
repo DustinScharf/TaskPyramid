@@ -23,6 +23,7 @@ public class StartMenu implements Menu {
     @Override
     public boolean show(Stage stage) {
         stage.setScene(FXGLLoader.toControlledScene(FXGL_FILE_PATH, this));
+        this.init();
         stage.show();
         return true;
     }
