@@ -36,7 +36,7 @@ public class StartMenu implements Menu {
     // Button Listeners //
     //////////////////////
     private void playButtonClicked() {
-        System.out.println("playButtonClicked");
+
     }
 
 }
