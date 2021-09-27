@@ -11,5 +11,8 @@ public interface Menu {
      */
     public boolean show(Stage stage);
 
+    /**
+     * Initializes all necessary components (like button listeners) for this menu
+     */
     public void init();
 }
