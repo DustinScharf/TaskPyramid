@@ -8,8 +8,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.awt.*;
-
 public class App extends Application {
     public static void main(String[] args) {
         launch(args);
