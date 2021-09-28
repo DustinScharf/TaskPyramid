@@ -1,11 +1,7 @@
-package com.dustinscharf.taskpyramid.launcher;
+package com.dustinscharf.taskpyramid.gui.launcher;
 
-import com.dustinscharf.taskpyramid.menu.StartMenu;
+import com.dustinscharf.taskpyramid.gui.menu.StartMenu;
 import javafx.application.Application;
-import javafx.scene.Node;
-import javafx.scene.Scene;
-import javafx.scene.layout.HBox;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class App extends Application {

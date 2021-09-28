@@ -1,4 +1,4 @@
-package com.dustinscharf.taskpyramid.menu;
+package com.dustinscharf.taskpyramid.gui.menu;
 
 import javafx.stage.Stage;
 

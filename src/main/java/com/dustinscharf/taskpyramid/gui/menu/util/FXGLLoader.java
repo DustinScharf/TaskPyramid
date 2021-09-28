@@ -1,5 +1,6 @@
-package com.dustinscharf.taskpyramid.menu;
+package com.dustinscharf.taskpyramid.gui.menu.util;
 
+import com.dustinscharf.taskpyramid.gui.menu.Menu;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 
