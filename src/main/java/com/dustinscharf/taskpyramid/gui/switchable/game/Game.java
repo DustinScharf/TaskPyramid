@@ -5,6 +5,7 @@ import com.dustinscharf.taskpyramid.gui.switchable.menu.StartMenu;
 import com.dustinscharf.taskpyramid.gui.util.FXGLLoader;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 public class Game implements Switchable {
@@ -20,6 +21,9 @@ public class Game implements Switchable {
 
     @FXML
     private Button task3Button;
+
+    @FXML
+    private TextArea taskTextArea;
 
     @FXML
     private Button backButton;
