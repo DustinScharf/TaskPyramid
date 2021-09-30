@@ -1,6 +1,6 @@
 package com.dustinscharf.taskpyramid.gui.util;
 
-import com.dustinscharf.taskpyramid.gui.menu.Switchable;
+import com.dustinscharf.taskpyramid.gui.Switchable;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 
