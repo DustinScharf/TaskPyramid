@@ -12,7 +12,7 @@ import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 public class GameGui implements Switchable {
-    private static final String FXGL_FILE_PATH = "/fxgl/Game.fxml";
+    private static final String FXGL_FILE_PATH = "/fxml/Game.fxml";
 
     private Stage stage;
 
