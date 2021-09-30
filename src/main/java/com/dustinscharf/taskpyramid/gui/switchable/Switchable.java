@@ -1,4 +1,4 @@
-package com.dustinscharf.taskpyramid.gui;
+package com.dustinscharf.taskpyramid.gui.switchable;
 
 import javafx.stage.Stage;
 
