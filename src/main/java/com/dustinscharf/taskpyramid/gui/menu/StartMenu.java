@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class StartMenu implements Menu {
+public class StartMenu implements Switchable {
     private static final String FXGL_FILE_PATH = "/fxgl/StartMenu.fxml";
 
     @FXML

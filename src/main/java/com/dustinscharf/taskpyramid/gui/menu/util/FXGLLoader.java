@@ -1,13 +1,13 @@
 package com.dustinscharf.taskpyramid.gui.menu.util;
 
-import com.dustinscharf.taskpyramid.gui.menu.Menu;
+import com.dustinscharf.taskpyramid.gui.menu.Switchable;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 
 import java.io.IOException;
 
 public class FXGLLoader {
-    public static Scene toControlledScene(String fxglFilePath, Menu controllerMenu) {
+    public static Scene toControlledScene(String fxglFilePath, Switchable controllerMenu) {
         FXMLLoader fxmlLoader = new FXMLLoader(FXGLLoader.class.getResource(fxglFilePath));
 
         fxmlLoader.setController(controllerMenu);
