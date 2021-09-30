@@ -2,7 +2,7 @@ package com.dustinscharf.taskpyramid.gui.menu;
 
 import javafx.stage.Stage;
 
-public interface Menu {
+public interface Switchable {
     /**
      * Shows this menu on stage
      * <p>
