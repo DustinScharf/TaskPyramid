@@ -13,6 +13,15 @@ public class Game implements Switchable {
     private Stage stage;
 
     @FXML
+    private Button task1Button;
+
+    @FXML
+    private Button task2Button;
+
+    @FXML
+    private Button task3Button;
+
+    @FXML
     private Button backButton;
 
     @Override
