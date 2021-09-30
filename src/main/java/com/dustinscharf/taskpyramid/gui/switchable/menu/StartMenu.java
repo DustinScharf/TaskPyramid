@@ -1,4 +1,4 @@
-package com.dustinscharf.taskpyramid.gui.menu;
+package com.dustinscharf.taskpyramid.gui.switchable.menu;
 
 import com.dustinscharf.taskpyramid.gui.Switchable;
 import com.dustinscharf.taskpyramid.gui.util.FXGLLoader;

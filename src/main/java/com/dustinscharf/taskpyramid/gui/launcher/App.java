@@ -1,6 +1,6 @@
 package com.dustinscharf.taskpyramid.gui.launcher;
 
-import com.dustinscharf.taskpyramid.gui.menu.StartMenu;
+import com.dustinscharf.taskpyramid.gui.switchable.menu.StartMenu;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
