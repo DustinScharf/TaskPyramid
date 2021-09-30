@@ -18,9 +18,9 @@
             </Label>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" text="1" />
-                  <Button layoutX="299.0" layoutY="48.0" mnemonicParsing="false" text="2" />
-                  <Button layoutX="310.0" layoutY="48.0" mnemonicParsing="false" text="3" />
+                  <Button fx:id="task1Button" mnemonicParsing="false" text="1" />
+                  <Button fx:id="task2Button" layoutX="299.0" layoutY="48.0" mnemonicParsing="false" text="2" />
+                  <Button fx:id="task3Button" layoutX="310.0" layoutY="48.0" mnemonicParsing="false" text="3" />
                </children>
             </HBox>
             <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
