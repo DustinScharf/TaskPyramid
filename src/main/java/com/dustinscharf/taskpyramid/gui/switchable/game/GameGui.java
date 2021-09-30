@@ -1,5 +1,8 @@
 package com.dustinscharf.taskpyramid.gui.switchable.game;
 
+import com.dustinscharf.taskpyramid.game.Game;
+import com.dustinscharf.taskpyramid.game.SampleGameCreator;
+import com.dustinscharf.taskpyramid.game.task.Task;
 import com.dustinscharf.taskpyramid.gui.switchable.Switchable;
 import com.dustinscharf.taskpyramid.gui.switchable.menu.StartMenuGui;
 import com.dustinscharf.taskpyramid.gui.util.FXGLLoader;
@@ -28,6 +31,8 @@ public class GameGui implements Switchable {
     @FXML
     private Button backButton;
 
+    private Game game;
+
     @Override
     public boolean show(Stage stage) {
         this.stage = stage;
@@ -38,6 +43,8 @@ public class GameGui implements Switchable {
     }
 
     private void init() {
+        this.game = SampleGameCreator.createSampleGame();
+
         this.task1Button.setOnAction(actionEvent -> this.task1ButtonClicked());
         this.task2Button.setOnAction(actionEvent -> this.task2ButtonClicked());
         this.task3Button.setOnAction(actionEvent -> this.task3ButtonClicked());
@@ -49,15 +56,18 @@ public class GameGui implements Switchable {
     // Button Listeners //
     //////////////////////
     private void task1ButtonClicked() {
-        // TODO
+        Task task1 = this.game.getTasks().getTask(0);
+        this.taskTextArea.setText(task1.getTaskText());
     }
 
     private void task2ButtonClicked() {
-        // TODO
+        Task task2 = this.game.getTasks().getTask(1);
+        this.taskTextArea.setText(task2.getTaskText());
     }
 
     private void task3ButtonClicked() {
-        // TODO
+        Task task3 = this.game.getTasks().getTask(2);
+        this.taskTextArea.setText(task3.getTaskText());
     }
 
     private void backButtonClicked() {
