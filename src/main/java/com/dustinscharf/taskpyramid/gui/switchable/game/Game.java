@@ -59,5 +59,4 @@ public class Game implements Switchable {
     private void backButtonClicked() {
         new StartMenu().show(this.stage);
     }
-    // TODO
 }
