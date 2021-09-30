@@ -1,7 +1,7 @@
 package com.dustinscharf.taskpyramid.gui.switchable.menu;
 
 import com.dustinscharf.taskpyramid.gui.switchable.Switchable;
-import com.dustinscharf.taskpyramid.gui.switchable.game.Game;
+import com.dustinscharf.taskpyramid.gui.switchable.game.GameGui;
 import com.dustinscharf.taskpyramid.gui.util.Alerter;
 import com.dustinscharf.taskpyramid.gui.util.FXGLLoader;
 import javafx.fxml.FXML;
@@ -10,7 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class StartMenu implements Switchable {
+public class StartMenuGui implements Switchable {
     private static final String FXGL_FILE_PATH = "/fxgl/StartMenu.fxml";
     private static final String CSS_FILE_PATH = "/css/StartMenu.css";
 
@@ -49,7 +49,7 @@ public class StartMenu implements Switchable {
     // Button Listeners //
     //////////////////////
     private void playButtonClicked() {
-        new Game().show(this.stage);
+        new GameGui().show(this.stage);
     }
 
     private void createGameButtonClicked() {

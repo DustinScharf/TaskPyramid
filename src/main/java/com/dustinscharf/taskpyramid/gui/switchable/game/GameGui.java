@@ -1,14 +1,14 @@
 package com.dustinscharf.taskpyramid.gui.switchable.game;
 
 import com.dustinscharf.taskpyramid.gui.switchable.Switchable;
-import com.dustinscharf.taskpyramid.gui.switchable.menu.StartMenu;
+import com.dustinscharf.taskpyramid.gui.switchable.menu.StartMenuGui;
 import com.dustinscharf.taskpyramid.gui.util.FXGLLoader;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
-public class Game implements Switchable {
+public class GameGui implements Switchable {
     private static final String FXGL_FILE_PATH = "/fxgl/Game.fxml";
 
     private Stage stage;
@@ -61,6 +61,6 @@ public class Game implements Switchable {
     }
 
     private void backButtonClicked() {
-        new StartMenu().show(this.stage);
+        new StartMenuGui().show(this.stage);
     }
 }
