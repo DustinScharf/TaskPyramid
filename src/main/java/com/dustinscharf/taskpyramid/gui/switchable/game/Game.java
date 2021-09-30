@@ -7,8 +7,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class TestMiniGame implements Switchable {
-    private static final String FXGL_FILE_PATH = "/fxgl/TestMiniGame.fxml";
+public class Game implements Switchable {
+    private static final String FXGL_FILE_PATH = "/fxgl/Game.fxml";
 
     private Stage stage;
 

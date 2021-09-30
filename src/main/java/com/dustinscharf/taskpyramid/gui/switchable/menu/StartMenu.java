@@ -1,7 +1,7 @@
 package com.dustinscharf.taskpyramid.gui.switchable.menu;
 
 import com.dustinscharf.taskpyramid.gui.switchable.Switchable;
-import com.dustinscharf.taskpyramid.gui.switchable.game.TestMiniGame;
+import com.dustinscharf.taskpyramid.gui.switchable.game.Game;
 import com.dustinscharf.taskpyramid.gui.util.Alerter;
 import com.dustinscharf.taskpyramid.gui.util.FXGLLoader;
 import javafx.fxml.FXML;
@@ -49,7 +49,7 @@ public class StartMenu implements Switchable {
     // Button Listeners //
     //////////////////////
     private void playButtonClicked() {
-        new TestMiniGame().show(this.stage);
+        new Game().show(this.stage);
     }
 
     private void createGameButtonClicked() {
