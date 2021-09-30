@@ -1,6 +1,8 @@
 package com.dustinscharf.taskpyramid.gui.switchable.menu;
 
-import com.dustinscharf.taskpyramid.gui.Switchable;
+import com.dustinscharf.taskpyramid.gui.switchable.Switchable;
+import com.dustinscharf.taskpyramid.gui.switchable.game.TestMiniGame;
+import com.dustinscharf.taskpyramid.gui.util.Alerter;
 import com.dustinscharf.taskpyramid.gui.util.FXGLLoader;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
@@ -11,6 +13,8 @@ import javafx.stage.Stage;
 public class StartMenu implements Switchable {
     private static final String FXGL_FILE_PATH = "/fxgl/StartMenu.fxml";
     private static final String CSS_FILE_PATH = "/css/StartMenu.css";
+
+    private Stage stage;
 
     @FXML
     private Label taskPyramideHeadlineLabel;
@@ -26,11 +30,12 @@ public class StartMenu implements Switchable {
 
     @Override
     public boolean show(Stage stage) {
+        this.stage = stage;
         Scene scene = FXGLLoader.toControlledScene(FXGL_FILE_PATH, this);
         scene.getStylesheets().add(CSS_FILE_PATH);
-        stage.setScene(scene);
+        this.stage.setScene(scene);
         this.init();
-        stage.show();
+        this.stage.show();
         return true;
     }
 
@@ -44,15 +49,15 @@ public class StartMenu implements Switchable {
     // Button Listeners //
     //////////////////////
     private void playButtonClicked() {
-        // TODO
+        new TestMiniGame().show(this.stage);
     }
 
     private void createGameButtonClicked() {
-        // TODO
+        Alerter.sendInfoAlert("Only pre created games supported yet.");
     }
 
     private void exitButtonClicked() {
-        // TODO
+        this.stage.close();
     }
 
 }
