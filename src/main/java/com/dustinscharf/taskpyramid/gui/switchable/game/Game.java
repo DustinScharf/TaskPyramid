@@ -34,6 +34,9 @@ public class Game implements Switchable {
     }
 
     private void init() {
+        this.task1Button.setOnAction(actionEvent -> this.task1ButtonClicked());
+        this.task2Button.setOnAction(actionEvent -> this.task2ButtonClicked());
+        this.task3Button.setOnAction(actionEvent -> this.task3ButtonClicked());
         this.backButton.setOnAction(actionEvent -> this.backButtonClicked());
         // TODO
     }
@@ -41,6 +44,18 @@ public class Game implements Switchable {
     //////////////////////
     // Button Listeners //
     //////////////////////
+    private void task1ButtonClicked() {
+        // TODO
+    }
+
+    private void task2ButtonClicked() {
+        // TODO
+    }
+
+    private void task3ButtonClicked() {
+        // TODO
+    }
+
     private void backButtonClicked() {
         new StartMenu().show(this.stage);
     }
