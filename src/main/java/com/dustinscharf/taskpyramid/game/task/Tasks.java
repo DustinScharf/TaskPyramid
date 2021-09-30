@@ -1,9 +1,10 @@
 package com.dustinscharf.taskpyramid.game.task;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class Tasks {
-    private LinkedList<Task> tasks;
+    private List<Task> tasks;
 
     public Tasks() {
         this.tasks = new LinkedList<>();
