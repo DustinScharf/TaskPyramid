@@ -49,7 +49,7 @@ public class GameGui implements Switchable {
         this.game = SampleGameCreator.createSampleGame();
 
         // START: test-code
-        for (int i = 0; i < 3; ++i) {
+        for (int i = 0; i < 7; ++i) {
             this.taskButtonsHBox.getChildren().add(new Button("button" + i));
         }
         // END: test-code
