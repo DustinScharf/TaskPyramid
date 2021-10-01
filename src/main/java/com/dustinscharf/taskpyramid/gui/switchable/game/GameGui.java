@@ -48,14 +48,12 @@ public class GameGui implements Switchable {
     private void init() {
         this.game = SampleGameCreator.createSampleGame();
 
-        // START: test-code
         int taskAmount = this.game.getTasks().getAmount();
         for (int taskNumber = 0; taskNumber < taskAmount; ++taskNumber) {
             Button button = new Button("Task " + (taskNumber + 1));
             // TODO add task button listeners
             this.taskButtonsHBox.getChildren().add(button);
         }
-        // END: test-code
 
         this.backButton.setOnAction(actionEvent -> this.backButtonClicked());
     }
