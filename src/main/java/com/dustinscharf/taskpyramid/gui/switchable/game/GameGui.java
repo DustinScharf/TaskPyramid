@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public class GameGui implements Switchable {
     private static final String CSS_FILE_PATH = "/css/overall-style.css";
 
     @FXML
-    private Parent taskButtonsParent;
+    private HBox taskButtonsHBox;
 
     @FXML
     private TextArea taskTextArea;
@@ -46,6 +47,12 @@ public class GameGui implements Switchable {
 
     private void init() {
         this.game = SampleGameCreator.createSampleGame();
+
+        // START: test-code
+        for (int i = 0; i < 3; ++i) {
+            this.taskButtonsHBox.getChildren().add(new Button("button" + i));
+        }
+        // END: test-code
 
         // TODO create task buttons
         // TODO add task button listeners
