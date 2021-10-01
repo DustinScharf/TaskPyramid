@@ -52,20 +52,10 @@ public class GameGui implements Switchable {
     //////////////////////
     // Button Listeners //
     //////////////////////
-    private void task1ButtonClicked() {
-        Task task1 = this.game.getTasks().getTask(0);
-        this.taskTextArea.setText(task1.getTaskText());
-    }
-
-    private void task2ButtonClicked() {
-        Task task2 = this.game.getTasks().getTask(1);
-        this.taskTextArea.setText(task2.getTaskText());
-    }
-
-    private void task3ButtonClicked() {
-        Task task3 = this.game.getTasks().getTask(2);
-        this.taskTextArea.setText(task3.getTaskText());
-    }
+//    private void task1ButtonClicked() {
+//        Task task1 = this.game.getTasks().getTask(0);
+//        this.taskTextArea.setText(task1.getTaskText());
+//    }
 
     private void backButtonClicked() {
         new StartMenuGui().show(this.stage);
