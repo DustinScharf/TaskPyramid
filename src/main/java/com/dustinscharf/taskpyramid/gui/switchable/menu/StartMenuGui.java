@@ -53,7 +53,7 @@ public class StartMenuGui implements Switchable {
     }
 
     private void createGameButtonClicked() {
-        Alerter.sendInfoAlert("Only pre created games supported yet.");
+        Alerter.sendInfoAlert("Only pre created games are supported yet.");
     }
 
     private void exitButtonClicked() {
