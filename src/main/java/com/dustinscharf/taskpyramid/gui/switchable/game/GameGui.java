@@ -20,6 +20,11 @@ public class GameGui implements Switchable {
     private static final String FXGL_FILE_PATH = "/fxml/Game.fxml";
     private static final String CSS_FILE_PATH = "/css/overall-style.css";
 
+    @FXML
+    private Parent taskButtonsParent;
+
+    private List<Button> taskButtons;
+
     private Stage stage;
 
     @FXML
