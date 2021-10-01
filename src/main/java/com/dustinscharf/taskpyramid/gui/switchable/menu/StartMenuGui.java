@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 public class StartMenuGui implements Switchable {
     private static final String FXGL_FILE_PATH = "/fxml/StartMenu.fxml";
-    private static final String CSS_FILE_PATH = "/css/StartMenu.css";
+    private static final String CSS_FILE_PATH = "/css/overall-style.css";
 
     private Stage stage;
 
