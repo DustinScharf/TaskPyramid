@@ -14,9 +14,13 @@
                <font>
                   <Font size="24.0" />
                </font></Label>
-            <Button fx:id="playButton" mnemonicParsing="false" text="Play" />
-            <Button fx:id="createGameButton" layoutX="284.0" layoutY="206.0" mnemonicParsing="false" text="Create Game" />
-            <Button fx:id="exitButton" layoutX="284.0" layoutY="219.0" mnemonicParsing="false" text="Exit" />
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="playButton" mnemonicParsing="false" text="Play" />
+                  <Button fx:id="createGameButton" mnemonicParsing="false" text="Create Game" />
+                  <Button fx:id="exitButton" mnemonicParsing="false" text="Exit" />
+               </children>
+            </VBox>
          </children>
       </VBox>
    </children>
