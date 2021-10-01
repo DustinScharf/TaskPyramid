@@ -23,15 +23,15 @@ public class GameGui implements Switchable {
     @FXML
     private Parent taskButtonsParent;
 
-    private List<Button> taskButtons;
-
-    private Stage stage;
-
     @FXML
     private TextArea taskTextArea;
 
     @FXML
     private Button backButton;
+
+    private Stage stage;
+
+    private List<Button> taskButtons;
 
     private Game game;
 
