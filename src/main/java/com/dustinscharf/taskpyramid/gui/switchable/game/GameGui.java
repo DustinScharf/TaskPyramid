@@ -2,7 +2,6 @@ package com.dustinscharf.taskpyramid.gui.switchable.game;
 
 import com.dustinscharf.taskpyramid.game.Game;
 import com.dustinscharf.taskpyramid.game.SampleGameCreator;
-import com.dustinscharf.taskpyramid.game.task.Task;
 import com.dustinscharf.taskpyramid.gui.switchable.Switchable;
 import com.dustinscharf.taskpyramid.gui.switchable.menu.StartMenuGui;
 import com.dustinscharf.taskpyramid.gui.util.FXGLLoader;
@@ -11,7 +10,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.util.List;
