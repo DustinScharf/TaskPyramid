@@ -44,7 +44,7 @@ public class GameGui implements Switchable {
     private void init() {
         this.game = SampleGameCreator.createSampleGame();
 
-
+        // TODO task button listeners
 
         this.backButton.setOnAction(actionEvent -> this.backButtonClicked());
     }
