@@ -17,4 +17,8 @@ public class Tasks {
     public Task getTask(int taskNumber) {
         return this.tasks.get(taskNumber);
     }
+
+    public int getAmount() {
+        return this.tasks.size();
+    }
 }
