@@ -51,7 +51,7 @@ public class GameGui implements Switchable {
         // START: test-code
         int taskAmount = this.game.getTasks().getAmount();
         for (int taskNumber = 0; taskNumber < taskAmount; ++taskNumber) {
-            this.taskButtonsHBox.getChildren().add(new Button("button" + (taskNumber + 1)));
+            this.taskButtonsHBox.getChildren().add(new Button("Task " + (taskNumber + 1)));
         }
         // END: test-code
 
