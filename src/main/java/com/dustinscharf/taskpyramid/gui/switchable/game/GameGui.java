@@ -57,8 +57,6 @@ public class GameGui implements Switchable {
         }
         // END: test-code
 
-        // TODO create task buttons
-
         this.backButton.setOnAction(actionEvent -> this.backButtonClicked());
     }
 
