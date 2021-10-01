@@ -44,9 +44,7 @@ public class GameGui implements Switchable {
     private void init() {
         this.game = SampleGameCreator.createSampleGame();
 
-        this.task1Button.setOnAction(actionEvent -> this.task1ButtonClicked());
-        this.task2Button.setOnAction(actionEvent -> this.task2ButtonClicked());
-        this.task3Button.setOnAction(actionEvent -> this.task3ButtonClicked());
+
 
         this.backButton.setOnAction(actionEvent -> this.backButtonClicked());
     }
