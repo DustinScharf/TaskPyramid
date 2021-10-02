@@ -11,15 +11,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SceneManager {
-    private final Stage rootStage;
+    private final Stage stage;
 
     private final Map<String, Scene> scenes = new HashMap<>();
 
-    public SceneManager(Stage rootStage) {
-        if (rootStage == null) {
-            throw new IllegalArgumentException("Stage rootStage can not be null");
+    public SceneManager(Stage stage) {
+        if (stage == null) {
+            throw new IllegalArgumentException("Stage stage can not be null");
         }
-        this.rootStage = rootStage;
+        this.stage = stage;
     }
 
     // TODO
@@ -35,6 +35,6 @@ public class SceneManager {
                 throw new RuntimeException(ioException);
             }
         });
-        rootStage.setScene(scene);
+        stage.setScene(scene);
     }
 }
