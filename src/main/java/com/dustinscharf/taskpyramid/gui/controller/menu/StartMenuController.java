@@ -1,5 +1,7 @@
 package com.dustinscharf.taskpyramid.gui.controller.menu;
 
-public class StartMenuController {
+import com.dustinscharf.taskpyramid.gui.controller.BaseController;
+
+public class StartMenuController extends BaseController {
     // TODO
 }

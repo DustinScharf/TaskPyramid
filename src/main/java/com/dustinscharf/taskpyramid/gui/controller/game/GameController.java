@@ -1,5 +1,7 @@
 package com.dustinscharf.taskpyramid.gui.controller.game;
 
-public class GameController {
+import com.dustinscharf.taskpyramid.gui.controller.BaseController;
+
+public class GameController extends BaseController {
     // TODO
 }
