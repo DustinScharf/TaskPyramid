@@ -1,5 +1,6 @@
 package com.dustinscharf.taskpyramid.gui.launcher;
 
+import com.dustinscharf.taskpyramid.gui.SceneManager;
 import com.dustinscharf.taskpyramid.gui.switchable.menu.StartMenuGui;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -13,6 +14,9 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         stage.setTitle("TaskPyramid");
 
-        new StartMenuGui().show(stage);
+        SceneManager sceneManager = new SceneManager(stage);
+        sceneManager.switchScene("/fxml/menu/StartMenu.fxml");
+
+        stage.show();
     }
 }
