@@ -6,7 +6,6 @@ import com.dustinscharf.taskpyramid.gui.switchable.Switchable;
 import com.dustinscharf.taskpyramid.gui.switchable.menu.StartMenuGui;
 import com.dustinscharf.taskpyramid.gui.util.FXGLLoader;
 import javafx.fxml.FXML;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
@@ -16,7 +15,7 @@ import javafx.stage.Stage;
 import java.util.List;
 
 public class GameGui implements Switchable {
-    private static final String FXGL_FILE_PATH = "/fxml/Game.fxml";
+    private static final String FXGL_FILE_PATH = "/fxml/game/Game.fxml";
     private static final String CSS_FILE_PATH = "/css/overall-style.css";
 
     @FXML
