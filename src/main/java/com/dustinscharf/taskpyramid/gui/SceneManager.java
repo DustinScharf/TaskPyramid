@@ -15,7 +15,7 @@ public class SceneManager {
     private final Map<String, Scene> scenes;
 
     private final List<Scene> sceneHistoryList;
-    private final ListIterator<Scene> sceneHistoryListIterator;
+    private ListIterator<Scene> sceneHistoryListIterator;
 
     public SceneManager(Stage stage) {
         if (stage == null) {
@@ -41,20 +41,28 @@ public class SceneManager {
             }
         });
         this.sceneHistoryList.add(scene);
-        this.sceneHistoryListIterator.next();
+        this.sceneHistoryListIterator = this.sceneHistoryList.listIterator(this.sceneHistoryList.size() - 1);
         this.stage.setScene(scene);
     }
 
-    private void switchToNextScene() {
-        if (!this.sceneHistoryListIterator.hasNext()) {
+    public boolean hastNextScene() {
+        return this.sceneHistoryListIterator.hasNext();
+    }
+
+    public void switchToNextScene() {
+        if (!this.hastNextScene()) {
             throw new NullPointerException("No next scene in scene history");
         }
 
         this.stage.setScene(this.sceneHistoryListIterator.next());
     }
 
-    private void switchToNextPrevious() {
-        if (!this.sceneHistoryListIterator.hasPrevious()) {
+    public boolean hasPreviousScene() {
+        return this.sceneHistoryListIterator.hasPrevious();
+    }
+
+    public void switchToPreviousScene() {
+        if (!this.hasPreviousScene()) {
             throw new NullPointerException("No previous scene in scene history");
         }
 
