@@ -9,7 +9,5 @@ public class StartMenuController extends BaseController {
     @FXML
     private void playButtonClicked() {
         super.sceneManager.switchScene("/fxml/game/Game.fxml");
-
-        super.sceneManager.switchToNextScene();
     }
 }
