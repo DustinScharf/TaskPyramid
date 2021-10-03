@@ -27,7 +27,7 @@ public class SceneManager {
 
         private void append(Scene scene) {
             this.sceneHistoryNavigationList.appendAfterCurrent(scene);
-            this.sceneHistoryNavigationList.getIterator().pointToLast();
+            this.sceneHistoryNavigationList.getInternIterator().pointToLast();
         }
 
 //        private boolean hasNextScene() {
@@ -78,18 +78,18 @@ public class SceneManager {
     }
 
     public void switchToNextScene() {
-        if (!this.sceneHistory.sceneHistoryNavigationList.getIterator().hasNext()) {
+        if (!this.sceneHistory.sceneHistoryNavigationList.getInternIterator().hasNext()) {
             throw new NullPointerException("No next scene in scene history");
         }
 
-        this.stage.setScene(this.sceneHistory.sceneHistoryNavigationList.getIterator().goNext());
+        this.stage.setScene(this.sceneHistory.sceneHistoryNavigationList.getInternIterator().goNext());
     }
 
     public void switchToPreviousScene() {
-        if (!this.sceneHistory.sceneHistoryNavigationList.getIterator().hasPrevious()) {
+        if (!this.sceneHistory.sceneHistoryNavigationList.getInternIterator().hasPrevious()) {
             throw new NullPointerException("No previous scene in scene history");
         }
 
-        this.stage.setScene(this.sceneHistory.sceneHistoryNavigationList.getIterator().goPrevious());
+        this.stage.setScene(this.sceneHistory.sceneHistoryNavigationList.getInternIterator().goPrevious());
     }
 }
