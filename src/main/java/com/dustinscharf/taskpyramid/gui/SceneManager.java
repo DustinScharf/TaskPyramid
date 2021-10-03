@@ -29,26 +29,6 @@ public class SceneManager {
             this.sceneHistoryNavigationList.appendAfterCurrent(scene);
             this.sceneHistoryNavigationList.getInternIterator().pointToLast();
         }
-
-//        private boolean hasNextScene() {
-//            return this.sceneHistoryNavigationList.getIterator().hasNext();
-//        }
-//
-//        private Scene getNextScene() {
-//            this.sceneHistoryNavigationList.get
-//        }
-//
-//        public boolean hasPreviousScene() {
-//            return this.sceneHistoryNavigationList.getIterator().hasPrevious();
-//        }
-//
-//        public Scene getPreviousScene() {
-//            if (!this.hasPreviousScene()) {
-//                throw new NullPointerException("No previous scene in scene history");
-//            }
-//
-//            return this.sceneHistoryListIterator.previous();
-//        }
     }
 
     public SceneManager(Stage stage) {
