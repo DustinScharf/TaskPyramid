@@ -68,12 +68,16 @@ public class NavigationList<DataType> {
 
     public NavigationList() {
         this.head = null;
+        this.tail = null;
+
+        this.iterator = new Iterator();
     }
 
     public void appendAfterCurrent(DataType data) {
         if (this.head == null) {
             this.head = new Node(null, data, null);
             this.tail = this.head;
+            return;
         }
 
         this.tail = this.iterator.pointer;
