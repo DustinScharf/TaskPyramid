@@ -26,7 +26,7 @@ public class SceneManager {
         }
 
         private void append(Scene scene) {
-            this.sceneHistoryNavigationList.appendAfterCurrentAndDropAfter(scene);
+            this.sceneHistoryNavigationList.appendAfterCurrentAndDropAfterCurrent(scene);
             this.sceneHistoryNavigationList.getInternIterator().pointToLast();
         }
     }
