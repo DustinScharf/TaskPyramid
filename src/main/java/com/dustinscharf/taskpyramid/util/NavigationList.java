@@ -87,7 +87,7 @@ public class NavigationList<DataType> {
         this.tail = appendNode;
     }
 
-    public Iterator getIterator() {
+    public Iterator getInternIterator() {
         return this.iterator;
     }
 }
