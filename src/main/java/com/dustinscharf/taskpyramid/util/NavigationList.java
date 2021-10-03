@@ -7,18 +7,18 @@ public class NavigationList<DataType> {
     private Iterator iterator;
 
     private class Node {
-        private Node next;
-        private DataType data;
         private Node previous;
+        private DataType data;
+        private Node next;
 
-        public Node(Node next, DataType data, Node previous) {
-            this.next = next;
-            this.data = data;
+        public Node(Node previous, DataType data, Node next) {
             this.previous = previous;
+            this.data = data;
+            this.next = next;
         }
     }
 
-    private class Iterator {
+    public class Iterator {
         private Node pointer;
 
         public DataType pointToFirst() {
@@ -70,14 +70,20 @@ public class NavigationList<DataType> {
         this.head = null;
     }
 
-    public void append(DataType data) {
+    public void appendAfterCurrent(DataType data) {
         if (this.head == null) {
             this.head = new Node(null, data, null);
             this.tail = this.head;
         }
 
+        this.tail = this.iterator.pointer;
+
         Node appendNode = new Node(this.tail, data, null);
         this.tail.next = appendNode;
         this.tail = appendNode;
+    }
+
+    public Iterator getIterator() {
+        return this.iterator;
     }
 }
