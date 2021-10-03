@@ -17,8 +17,8 @@
             <VBox alignment="CENTER" spacing="10.0">
                <children>
                   <Button fx:id="playButton" defaultButton="true" mnemonicParsing="false" onAction="#playButtonClicked" text="Play" />
-                  <Button fx:id="createGameButton" mnemonicParsing="false" text="Create Game" />
-                  <Button fx:id="exitButton" mnemonicParsing="false" text="Exit" />
+                  <Button fx:id="createGameButton" mnemonicParsing="false" onAction="#createGameButtonClicked" text="Create Game" />
+                  <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitButtonClicked" text="Exit" />
                </children>
             </VBox>
          </children>
