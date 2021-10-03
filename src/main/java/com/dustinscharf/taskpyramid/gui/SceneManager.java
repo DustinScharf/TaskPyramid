@@ -1,6 +1,7 @@
 package com.dustinscharf.taskpyramid.gui;
 
 import com.dustinscharf.taskpyramid.gui.controller.BaseController;
+import com.dustinscharf.taskpyramid.util.NavigationList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
@@ -8,9 +9,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
 import java.util.Map;
 
 public class SceneManager {
@@ -21,42 +19,36 @@ public class SceneManager {
     private final SceneHistory sceneHistory;
 
     public class SceneHistory {
-        private final List<Scene> sceneHistoryList;
-        private ListIterator<Scene> sceneHistoryListIterator;
+        private final NavigationList<Scene> sceneHistoryNavigationList;
 
         private SceneHistory() {
-            this.sceneHistoryList = new LinkedList<>();
-            this.sceneHistoryListIterator = this.sceneHistoryList.listIterator();
+            this.sceneHistoryNavigationList = new NavigationList<>();
         }
 
         private void append(Scene scene) {
-            this.sceneHistoryList.add(scene);
-            this.sceneHistoryListIterator = this.sceneHistoryList.listIterator(this.sceneHistoryList.size() - 1);
+            this.sceneHistoryNavigationList.appendAfterCurrent(scene);
+            this.sceneHistoryNavigationList.getIterator().pointToLast();
         }
 
-        public boolean hasNextScene() {
-            return this.sceneHistoryListIterator.hasNext();
-        }
-
-        public Scene getNextScene() {
-            if (!this.hasNextScene()) {
-                throw new NullPointerException("No next scene in scene history");
-            }
-
-            return this.sceneHistoryListIterator.next();
-        }
-
-        public boolean hasPreviousScene() {
-            return this.sceneHistoryListIterator.hasPrevious();
-        }
-
-        public Scene getPreviousScene() {
-            if (!this.hasPreviousScene()) {
-                throw new NullPointerException("No previous scene in scene history");
-            }
-
-            return this.sceneHistoryListIterator.previous();
-        }
+//        private boolean hasNextScene() {
+//            return this.sceneHistoryNavigationList.getIterator().hasNext();
+//        }
+//
+//        private Scene getNextScene() {
+//            this.sceneHistoryNavigationList.get
+//        }
+//
+//        public boolean hasPreviousScene() {
+//            return this.sceneHistoryNavigationList.getIterator().hasPrevious();
+//        }
+//
+//        public Scene getPreviousScene() {
+//            if (!this.hasPreviousScene()) {
+//                throw new NullPointerException("No previous scene in scene history");
+//            }
+//
+//            return this.sceneHistoryListIterator.previous();
+//        }
     }
 
     public SceneManager(Stage stage) {
@@ -85,7 +77,19 @@ public class SceneManager {
         this.stage.setScene(scene);
     }
 
-    public SceneHistory getSceneHistory() {
-        return this.sceneHistory;
+    public void switchToNextScene() {
+        if (!this.sceneHistory.sceneHistoryNavigationList.getIterator().hasNext()) {
+            throw new NullPointerException("No next scene in scene history");
+        }
+
+        this.stage.setScene(this.sceneHistory.sceneHistoryNavigationList.getIterator().goNext());
+    }
+
+    public void switchToPreviousScene() {
+        if (!this.sceneHistory.sceneHistoryNavigationList.getIterator().hasPrevious()) {
+            throw new NullPointerException("No previous scene in scene history");
+        }
+
+        this.stage.setScene(this.sceneHistory.sceneHistoryNavigationList.getIterator().goPrevious());
     }
 }
